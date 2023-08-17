@@ -1,0 +1,16 @@
+<div class="tarefa-container">
+    <form [formGroup]="tarefaForm" (ngSubmit)="onSubmit()">
+      <mat-form-field>
+        <mat-label>Título</mat-label>
+        <input matInput formControlName="titulo" placeholder="Título da tarefa">
+      </mat-form-field>
+    
+      <mat-form-field>
+        <mat-label>Descrição</mat-label>
+        <textarea matInput formControlName="descricao" placeholder="Descrição da tarefa"></textarea>
+      </mat-form-field>
+    
+      <button mat-raised-button color="primary" type="submit" [disabled]="!tarefaForm.valid">Adicionar Tarefa</button>
+    </form>
+  </div>
+  

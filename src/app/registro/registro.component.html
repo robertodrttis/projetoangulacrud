@@ -1,0 +1,15 @@
+<div class="registro-container">
+    <form [formGroup]="registroForm" (ngSubmit)="onSubmit()">
+      <mat-form-field>
+        <input matInput placeholder="Nome" formControlName="nome">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Email" formControlName="email">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Senha" type="password" formControlName="senha">
+      </mat-form-field>
+      <button mat-raised-button type="submit" [disabled]="!registroForm.valid">Registrar</button>
+    </form>
+  </div>
+  

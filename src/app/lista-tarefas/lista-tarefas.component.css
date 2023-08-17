@@ -1,0 +1,58 @@
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    background-color: #e8eaf6;
+    padding: 20px; 
+  
+}
+  
+  table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-bottom: 20px; 
+    background-color: #ffffff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  th, td {
+    padding: 15px; 
+    border-bottom: 1px solid #e0e0e0; 
+    text-align: left; 
+  }
+  
+  th {
+    background-color: #4CAF50; 
+    color: white; 
+
+  }
+  
+  button {
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-right: 10px; 
+    transition: background-color 0.3s;
+  }
+
+  button:nth-child(1) {
+    background-color: #007BFF;
+    color: white; 
+  }
+  
+ 
+  button:nth-child(2) {
+    background-color: #f44336; 
+    color: white; 
+  }
+  
+
+  button:last-child {
+    background-color: #4CAF50; 
+    color: white; 
+    margin-left: 16px;
+  }
+
+  button:hover {
+    opacity: 0.8; 
+  }

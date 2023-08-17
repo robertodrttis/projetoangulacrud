@@ -1,0 +1,23 @@
+
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Título</th>
+        <th>Descrição</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let tarefa of tarefas$ | async">
+        <td>{{ tarefa.id }}</td>
+        <td>{{ tarefa.titulo }}</td>
+        <td>{{ tarefa.descricao }}</td>
+        <td>
+          <button (click)="editarTarefa(tarefa.id)">Editar</button>
+          <button (click)="excluirTarefa(tarefa.id)">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button (click)="adicionarTarefa()">Adicionar Tarefa</button>
