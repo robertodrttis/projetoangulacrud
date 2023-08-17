@@ -6,6 +6,7 @@ import { ListaTarefasComponent } from './lista-tarefas/lista-tarefas.component';
 import { CadastrarTarefaComponent } from './cadastrar-tarefa/cadastrar-tarefa.component';
 import { EditarTarefaComponent } from './editar-tarefa/editar-tarefa.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ExcluirTarefaComponent } from './excluir-tarefa/excluir-tarefa.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'tarefas', component: ListaTarefasComponent },
   { path: 'cadastrar-tarefa', component: CadastrarTarefaComponent },
   { path: 'editar-tarefa/:id', component: EditarTarefaComponent },
+  { path: 'excluir', component: ExcluirTarefaComponent },
 
 ];
 

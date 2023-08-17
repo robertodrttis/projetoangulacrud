@@ -26,6 +26,7 @@ export class ListaTarefasComponent implements OnInit {
   
   excluirTarefa(id: number): void {
     this.tarefasService.deleteTarefa(id).subscribe(() => {
+      this.router.navigate(['/excluir']);
       this.tarefas$ = this.tarefasService.getTarefas();
     });
   }
